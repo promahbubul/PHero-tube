@@ -59,7 +59,7 @@ const displayContent = (videos) => {
             </div>
             <div class="space-y-2">
               <div>
-                <h2 class="text-xl font-semibold leading-8">
+                <h2 class="text-lg font-semibold leading-8">
                ${video.title}
               </h2>
               <div class="flex gap-2">
