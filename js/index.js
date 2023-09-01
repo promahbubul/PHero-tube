@@ -53,15 +53,26 @@ const displayContent = (videos) => {
           </figure>
           <div class="card-body flex flex-row w-full p-0 mt-5">
             <div class="w-2/12">
-              <img class='rounded-full w-10 h-10' src="${video.authors[0].profile_picture}" alt="" />
+              <img class='rounded-full w-10 h-10' src="${
+                video.authors[0].profile_picture
+              }" alt="" />
             </div>
             <div class="space-y-2">
-              <h2 class="text-xl font-semibold leading-8">
+              <div>
+                <h2 class="text-xl font-semibold leading-8">
                ${video.title}
               </h2>
-              <div>
-                <span class="text-[#171717B2]">${video.authors[0].profile_name}</span>
-                <span class="badge badge-secondary">${video.authors[0]?.verified}</span>
+              <div class="flex gap-2">
+                <span class="text-[#171717B2]">${
+                  video.authors[0].profile_name
+                }</span>
+                ${
+                  video.authors[0].verified == false
+                    ? "<span></span>"
+                    : `<img src="./verifyed.png"`
+                }
+              </div>
+               
               </div>
               <div>
                 <span class="text-[#171717B2]">${video.others.views}</span>
