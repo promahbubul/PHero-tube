@@ -83,9 +83,9 @@ const noContentFind = () => {
 
   const card = document.createElement("div");
   card.innerHTML = `
-    <div>
+    <div class="mt-20">
     <img class="text-center mx-auto" src="./Icon.png" />
-    <h3 class="font-bold text-center text-4xl">Oops!! Sorry, There is no content here</h3>
+    <h3 class="font-bold text-center text-4xl">Oops!! Sorry, There is no<br> content here</h3>
     </div>
       `;
   videoContaner.appendChild(card);
