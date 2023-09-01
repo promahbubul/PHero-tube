@@ -60,7 +60,27 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn bg-[#FF1F3D] text-white hover:bg-[#c43145]">Blog</a>
+          <a
+            onclick="my_modal_4.showModal()"
+            class="btn bg-[#FF1F3D] text-white hover:bg-[#c43145]"
+            >Blog</a
+          >
+
+          <!-- Modal for Blog -->
+          <!-- You can open the modal using ID.showModal() method -->
+          <!-- <button class="btn" onclick="my_modal_4.showModal()">
+            open modal
+          </button> -->
+          <dialog id="my_modal_4" class="modal">
+            <form method="dialog" class="modal-box w-11/12 max-w-5xl">
+              <h3 class="font-bold text-lg">Hello!</h3>
+              <p class="py-4">Click the button below to close</p>
+              <div class="modal-action">
+                <!-- if there is a button, it will close the modal -->
+                <button class="btn">Close</button>
+              </div>
+            </form>
+          </dialog>
         </div>
       </div>
     </header>
