@@ -31,10 +31,10 @@ const btnContainer = (button) => {
 const loadData = async (id) => {
   const clickedBtn = document.getElementById(id);
   // const btnAtt = clickedBtn.attributes(id);
-  console.log(btnAtt);
-  if (clickedBtn == id) {
-    clickedBtn.classList.add("activeBtn");
-  }
+  // console.log(btnAtt);
+  // if (clickedBtn == id) {
+  //   clickedBtn.classList.add("activeBtn");
+  // }
   const res = await fetch(
     `https://openapi.programming-hero.com/api/videos/category/${id}`
   );
